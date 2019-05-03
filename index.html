@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Bloc Github User Search API"
+    />
+    <title>GitHub User Finder API</title>
+  </head>
+
+  <body>
+    <nav id="app-title" class="navbar">
+      <a class="navbar-brand" href="#">GitHub Finder API</a>
+    </nav>
+
+    <main role="main" class="container">
+      <section class="app-container">
+        <form id="search-form">
+          <h1>Search GitHub Users</h1>
+          <p>
+            Enter a username to display someone's profile and repos
+          </p>
+          <input
+            type="text"
+            id="listen-user-input"
+            class="form-control"
+            placeholder="Type a GitHub Handler"
+          />
+          <input
+            id="click-submit"
+            class="btn btn-primary"
+            type="submit"
+            value="Submit"
+          />
+        </form>
+      </section>
+      <section class="display-results-container hidden">
+        <div id="display-profile"></div>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
